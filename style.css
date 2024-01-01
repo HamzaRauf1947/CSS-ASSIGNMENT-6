@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: white; */
+    background-color: rgba(244, 228, 198, 0.911);
+
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    grid-template-rows: 150px 1fr 1fr 180px;
+    grid-template-columns: 250px 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.item {
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Navigation {
+    grid-row: 1/5;
+    background-color: rgba(248, 212, 144, 0.848);
+}
+
+.Navigation img {
+    width: 200px;
+}
+
+.Navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.Navigation a:hover {
+    /* background-color: orange; */
+    color: orange;
+    transition: all 0.5s;
+
+}
+
+.Header {
+    /* background-color: #113946; */
+    background-color: rgba(248, 212, 144, 0.847);
+    grid-column: 2/5;
+    display: flex;
+    padding: 0 20px 0 0;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    width: 1000px;
+    height: 50px;
+
+}
+
+.search .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: orange;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    border: transparent;
+    font-size: 20px;
+
+}
+
+.btn-eng {
+    width: 126px;
+    height: 50px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.red-btn-sign {
+    width: 77px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 19px;
+
+}
+
+
+
+.Header input {
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: transparent;
+    color: black;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.Header input ::placeholder {
+    text-align: left;
+}
+
+
+.card1 {
+    /* background-color: #102c57; */
+    grid-row: 2/4;
+    background-image: url("./1-4012-695944-230921071616.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.card2 {
+    /* background-color: #884a39; */
+    grid-row: 2/4;
+    background-image: url("./pc3.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card3 {
+    /* background-color: #454545; */
+    background-image: url("./card3.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card4 {
+    /* background-color: #85586f; */
+    background-image: url("./mouse1.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.Footer {
+    /* background-color: red; */
+    grid-column: 2/5;
+}
+
+.Footer {
+    padding: 20PX;
+}
+
+.socailIcons {
+    font-size: 40px;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: center;
+}
+
+.socailIcons a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.socailIcons a i {
+    color: rgba(255, 166, 0, 0.9);
+}
+
+.socailIcons a:hover {
+    background-color: rgba(255, 166, 0, 0.9);
+    transition: all 0.5s;
+}
+
+.socailIcons a i:hover {
+    color: white;
+    transition: all 0.5s;
+}
+
+.Footer {
+    background-color: rgba(248, 212, 144, 0.848);
+}
+
+.footernav ul {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footernav ul li {
+    list-style: none;
+}
+
+.footernav ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.footernav ul li a:hover {
+    color: orange;
+    transition: all 0.5s;
+}
+
+.footerbottom p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+.footerbottom p .developer {
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    color: orange;
+}
